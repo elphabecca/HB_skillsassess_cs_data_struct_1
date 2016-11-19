@@ -1,0 +1,66 @@
+Part 1: Discussion Questions
+
+
+Runtime
+
+When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+ANSWER:
+O(n) — determining whether I have an elephant or not would (at the worst case) require me to go through the whole box cracker by cracker, and it is a possibility that either the last cracker I examined was the elephant (or that my box was sadly devoid of elephant crackers altogether).  As such, the runtime is directly related to how many crackers are in my box.
+
+Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+
+ANSWER:
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n^2)
+O(2^n)
+
+* I assumed O(n2) was O(n^2).
+
+
+Stacks and Queues
+
+In the following cases, would a stack or queue be a more appropriate data structure?
+
+The process of loading and unloading pallets onto a flatbed truck: STACK
+
+Putting bottle caps on bottles of beer as they roll down an assembly line: QUEUE
+
+Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2): QUEUE
+
+Describe two more situations where a queue would be an appropriate data structure.
+The line at Starbucks, getting seated/served at a restaurant
+
+Describe two more situations where a stack would be an appropriate data structure.
+Eating pancakes, getting in and out of an elevator (unless it’s one of those crazy situations where the elevator has 2 doors), eating M&Ms (it would be illogical to start at the bottom of the bag or the bowl)
+
+
+Linked Lists
+
+Given the linked list below, which are the nodes? apple, berry, and cherry. Each node is represented by two boxes — the box with the data (i.e., “Apple”) and the reference to the next node.
+What is the data for each node? “Apple”, “Berry”, and “Cherry” - just the quoted text in each box
+Where is the head? The head is at node apple.
+Where is the tail? The tail would be at node cherry, if it were defined.
+
+(Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+
+What’s the difference between doubly- and singly-linked lists?
+A node in a singly linked list points in one direction (i.e., next), but a node in a doubly linked list points in two directions (i.e. next and previous).
+
+Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+If you append to the beginning of a linked list, you have to shift all following data points.  If you append to the tail, you don’t have do do any shifting, just append to the end and adjust the tail.
+
+
+Trees
+
+Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, BURRITO
+
+Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+food, Mexican, enchiladas, tacos, burrito, Indian, saag, tikka masala, Italian, pizza, Sicilian, New York-style, CHICAGO-STYLE
+
+How is a binary search tree different from other trees?
+A binary search tree has a rule for the arrangement of the tree (limits children to two), which makes for faster searching (unless the tree is greatly unbalanced).  
